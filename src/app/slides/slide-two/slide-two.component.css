@@ -1,0 +1,22 @@
+.stage {
+    position: relative;
+}
+
+.stage-prop {
+    position: absolute;
+}
+
+.bar {
+    fill: #F2F2F8;
+    stroke: #F2F2F8;
+}
+
+.bar.played {
+    fill: #E73B15;
+    stroke: #E73B15;
+}
+
+.label {
+    font-family: monospace;
+    font-size: 35%;
+}

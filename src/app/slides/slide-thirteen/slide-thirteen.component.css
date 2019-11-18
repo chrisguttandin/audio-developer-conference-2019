@@ -1,0 +1,9 @@
+.stage {
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+}
+
+.stage-prop {
+    position: absolute;
+}

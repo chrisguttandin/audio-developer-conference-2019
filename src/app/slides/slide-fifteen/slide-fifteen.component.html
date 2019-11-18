@@ -1,0 +1,12 @@
+<h2>Media Source Extensions</h2>
+<ul>
+    <li>supports adaptive streaming</li>
+    <li>requires data transport management</li>
+</ul>
+<adc-prism language="javascript" ngPreserveWhitespaces><!-- htmlmin:ignore -->const mediaSource = new MediaSource();
+const objectUrl = URL.createObjectURL(mediaSource);
+
+audioElement.src = objectUrl;
+
+// ... at some point in the future
+URL.revokeObjectURL(objectUrl);<!-- htmlmin:ignore --></adc-prism>

@@ -1,0 +1,30 @@
+<h2>Export for web</h2>
+<div class="stage">
+    <pre class="code">import("stdfaust.lib");
+import("layout2.dsp");
+
+flanger_mono(dmax,curdel,depth,fb,invert,lfoshape)
+  = _ &lt;: _, (-:de.fdelay(dmax,curdel)) ~ *(fb) : _,
+  *(select2(invert,depth,0-depth))
+  : + : *(1/(1+depth));
+
+process = ba.bypass1(fbp,flanger_mono_gui);
+
+   // Kill the groups to save vertical space:
+   meter_group(x) = flsg(x);
+   ctl_group(x)  = flkg(x);
+   del_group(x)  = flkg(x);
+   lvl_group(x)  = flkf(x);
+
+   flangeview = lfo(freq);
+
+   flanger_mono_gui = attach(flangeview) : flanger_mono(dmax,curdel,depth,fb,invert,lfoshape);
+
+   sinlfo(freq) = (1 + os.oscrs(freq))/2;
+   trilfo(freq) = 1.0-abs(os.saw1(freq));</pre>
+    <div class="dialog">
+        <span class="text">Export for web</span>
+        <button class="button">export</button>
+    </div>
+</div>
+<p class="footnote"><a href="http://faust.grame.fr/ide">faust.grame.fr/ide</a></p>

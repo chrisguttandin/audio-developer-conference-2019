@@ -1,0 +1,40 @@
+.stage {
+    overflow: hidden;
+    padding-bottom: 53.5%;
+    position: relative;
+}
+
+.button {
+    background-color: #E73B15;
+    border: none;
+    color: #F2F2F8;
+    display: block;
+    font-family: inherit;
+    font-size: 200%;
+    margin: 5% auto 0;
+}
+
+.code {
+    background-color: #000;
+    color: #F2F2F8;
+    font-size: 45%;
+    margin: 0;
+    overflow: hidden;
+    padding: 2%;
+    position: absolute;
+    width: 100%;
+}
+
+.dialog {
+    background: #F2F2F8;
+    margin: 15% 0 0 25%;
+    padding: 5% 0 5%;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+}
+
+.text {
+    font-size: 200%;
+    font-weight: bolder;
+}
