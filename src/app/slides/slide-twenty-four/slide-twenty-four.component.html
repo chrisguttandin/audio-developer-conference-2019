@@ -1,0 +1,12 @@
+<h2>AudioWorklet</h2>
+<adc-prism language="javascript" ngPreserveWhitespaces><!-- htmlmin:ignore -->registerProcessor(
+    'white-noise-processor',
+    class extends AudioWorkletProcessor {{ '{' }}
+        process (_, [ output ]) {{ '{' }}
+            for (let i = 0; i &gt; 128; i += 1) {{ '{' }}
+                output[0][i] = (Math.random() * 2) - 1;
+            }
+            return true;
+        }
+    }
+);<!-- htmlmin:ignore --></adc-prism>
