@@ -1,0 +1,65 @@
+{
+  "configVersion": 1,
+  "timestamp": 1574089313914,
+  "index": "/audio-developer-conference-2019/start.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/audio-developer-conference-2019/scripts/4.29eff38533a8c6c9d73d.js",
+        "/audio-developer-conference-2019/scripts/main.f1c94b11cb13e07103ec.js",
+        "/audio-developer-conference-2019/scripts/polyfills.858e2831e5b8adbf6bbd.js",
+        "/audio-developer-conference-2019/scripts/scripts.2e1ce7e02614f3c7a0cf.js",
+        "/audio-developer-conference-2019/start.html",
+        "/audio-developer-conference-2019/styles/styles.32367d8210b53cdf8266.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    },
+    {
+      "name": "fonts",
+      "installMode": "lazy",
+      "updateMode": "lazy",
+      "urls": [],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css",
+        "https:\\/\\/fonts\\.gstatic\\.com"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/audio-developer-conference-2019/scripts/4.29eff38533a8c6c9d73d.js": "6c098e6f7bf2456cd3d336d539f27340f8b7bbaa",
+    "/audio-developer-conference-2019/scripts/main.f1c94b11cb13e07103ec.js": "78a07f16cdce69d3e87792bf3bdd73bfab02f252",
+    "/audio-developer-conference-2019/scripts/polyfills.858e2831e5b8adbf6bbd.js": "08c97940ba93ccc4121b85df6911d86011ef3fb8",
+    "/audio-developer-conference-2019/scripts/scripts.2e1ce7e02614f3c7a0cf.js": "a578a59a82052d2001b770646c1738ae7cb19bd6",
+    "/audio-developer-conference-2019/start.html": "aa8d29c931cf1af8145983440b6d2c7e43353d7d",
+    "/audio-developer-conference-2019/styles/styles.32367d8210b53cdf8266.css": "6947301a682e37c13c3591af756a40b3f2fec52f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
