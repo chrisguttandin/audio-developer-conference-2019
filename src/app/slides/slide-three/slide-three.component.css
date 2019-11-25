@@ -6,11 +6,6 @@
     position: absolute;
 }
 
-.label {
-    font-family: monospace;
-    font-size: 35%;
-}
-
 .pad {
     transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
 }
