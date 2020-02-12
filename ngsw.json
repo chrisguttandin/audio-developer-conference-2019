@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1581460009864,
+  "timestamp": 1581541566304,
   "index": "/audio-developer-conference-2019/start.html",
   "assetGroups": [
     {
@@ -9,7 +9,7 @@
       "updateMode": "prefetch",
       "urls": [
         "/audio-developer-conference-2019/scripts/4.72bd98d7ea6a34bf3be5.js",
-        "/audio-developer-conference-2019/scripts/main.0771852e7c98170a926b.js",
+        "/audio-developer-conference-2019/scripts/main.8b4452a33f4981486785.js",
         "/audio-developer-conference-2019/scripts/polyfills.c0594e7aada16583f4ce.js",
         "/audio-developer-conference-2019/scripts/scripts.2e1ce7e02614f3c7a0cf.js",
         "/audio-developer-conference-2019/start.html",
@@ -38,10 +38,10 @@
   "dataGroups": [],
   "hashTable": {
     "/audio-developer-conference-2019/scripts/4.72bd98d7ea6a34bf3be5.js": "839854ded28dc4b59b746efcdb84d62380948d28",
-    "/audio-developer-conference-2019/scripts/main.0771852e7c98170a926b.js": "8e96a47e5bcc0dde56c4ec023f44c62fd660d387",
+    "/audio-developer-conference-2019/scripts/main.8b4452a33f4981486785.js": "87e99b963cb2166ffff56705a38820900bac8bf1",
     "/audio-developer-conference-2019/scripts/polyfills.c0594e7aada16583f4ce.js": "fb929778c5522826f6d47a18de7fb1edbdcff3d0",
     "/audio-developer-conference-2019/scripts/scripts.2e1ce7e02614f3c7a0cf.js": "41f2ca5aad759554b8f58a7e8fd6766555d9644e",
-    "/audio-developer-conference-2019/start.html": "c7825210f520f28a5f46ac64c889692d5380b41f",
+    "/audio-developer-conference-2019/start.html": "c742189e50143e2ad5677b23f0d092ec70c5e899",
     "/audio-developer-conference-2019/styles/styles.e08426b19baaecb0ac3c.css": "cda3b8c23926ff055fbfc7bac8b14c0218205708"
   },
   "navigationUrls": [
