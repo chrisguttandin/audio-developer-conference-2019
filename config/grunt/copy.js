@@ -9,14 +9,6 @@ module.exports = {
             }
         ]
     },
-    html: {
-        files: [
-            {
-                dest: 'build/audio-developer-conference-2019/start.html',
-                src: 'build/audio-developer-conference-2019/index.html'
-            }
-        ]
-    },
     scripts: {
         files: [
             {
