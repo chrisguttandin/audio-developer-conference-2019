@@ -6,6 +6,8 @@ import { filter } from 'rxjs/operators';
 import { WindowService } from '../window.service';
 import { slideAnimation } from './slide.animation';
 
+const EXCLUDED_FORWARD_TRANSITIONS = [ 0, 13, 14, 17, 18, 19, 20, 21, 22, 24 ];
+
 const NO_TRANSITION_PARAMS = { duration: '0s', enterTransform: 'none', leaveTransform: 'none', top: 'auto', width: 'auto' };
 
 @Component({
@@ -109,17 +111,7 @@ export class SlidesComponent implements OnDestroy, OnInit {
 
             this._index = newIndex;
 
-            if (direction === 'forwards'
-                    && (newIndex === 8
-                        || newIndex === 13
-                        || newIndex === 14
-                        || newIndex === 17
-                        || newIndex === 18
-                        || newIndex === 19
-                        || newIndex === 20
-                        || newIndex === 21
-                        || newIndex === 22
-                        || newIndex === 24)) {
+            if (direction === 'forwards' && EXCLUDED_FORWARD_TRANSITIONS.includes(newIndex)) {
                 this.transition = { params: NO_TRANSITION_PARAMS, value: newIndex };
             } else {
                 const nativeWindow = this._windowService.nativeWindow;
