@@ -1,6 +1,6 @@
 <h2>Step sequencer</h2>
 <div class="stage">
-    <svg class="stage-prop" [ngClass]="stepClass$ | async" version="1.1" viewBox="0 0 390 190">
+    <svg *ngIf="stepClass$ | async as stepClass" class="stage-prop" [ngClass]="stepClass" version="1.1" viewBox="0 0 390 190">
         <rect class="active pad" fill="#0D0B25" height="38" stroke="#0D0B25" stroke-linejoin="round" stroke-width="2" width="38" x="1" y="1"></rect>
         <rect class="pad" fill="#0D0B25" height="38" stroke="#0D0B25" stroke-linejoin="round" stroke-width="2" width="38" x="51" y="1"></rect>
         <rect class="pad" fill="#0D0B25" height="38" stroke="#0D0B25" stroke-linejoin="round" stroke-width="2" width="38" x="101" y="1"></rect>
