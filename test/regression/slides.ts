@@ -3,17 +3,15 @@ import { browser, by } from 'protractor';
 import { elementShotMatchers, expectElementShot, resembleElementShot } from 'element-shot';
 
 const navigateTo = (path: string) => {
-    return browser.get((env.IS_SMOKE_TEST) ? `/audio-developer-conference-2019${ path }` : path);
-}
+    return browser.get(env.IS_SMOKE_TEST ? `/audio-developer-conference-2019${path}` : path);
+};
 
 describe('slides', () => {
-
     beforeEach(() => {
         jasmine.addMatchers(elementShotMatchers);
     });
 
     describe('first slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/');
 
@@ -37,7 +35,6 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     // @todo describe('second slide', () => {
@@ -73,7 +70,6 @@ describe('slides', () => {
     // @todo });
 
     describe('fourth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/4');
 
@@ -85,11 +81,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('fifth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/5');
 
@@ -101,11 +95,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('sixth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/6');
 
@@ -117,11 +109,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('seventh slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/7');
 
@@ -133,11 +123,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('eighth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/8');
 
@@ -149,11 +137,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('nineth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/9');
 
@@ -165,11 +151,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('tenth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/10');
 
@@ -181,11 +165,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('eleventh slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/11');
 
@@ -197,11 +179,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twelveth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/12');
 
@@ -213,11 +193,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('thirteenth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/13');
 
@@ -229,11 +207,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('fourteenth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/14');
 
@@ -245,11 +221,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('fifteenth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/15');
 
@@ -261,11 +235,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('sixteenth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/16');
 
@@ -277,11 +249,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('seventeenth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/17');
 
@@ -293,11 +263,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('eighteenth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/18');
 
@@ -309,11 +277,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('nineteenth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/19');
 
@@ -325,11 +291,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twentieth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/20');
 
@@ -341,11 +305,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty first slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/21');
 
@@ -357,11 +319,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty second slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/22');
 
@@ -373,11 +333,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty third slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/23');
 
@@ -389,11 +347,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty fourth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/24');
 
@@ -405,11 +361,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty fifth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/25');
 
@@ -421,11 +375,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty sixth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/26');
 
@@ -437,11 +389,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty seventh slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/27');
 
@@ -453,11 +403,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty eighth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/28');
 
@@ -469,11 +417,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('twenty nineth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/29');
 
@@ -485,11 +431,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('thirtieth slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/30');
 
@@ -501,11 +445,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('thirty first slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/31');
 
@@ -517,11 +459,9 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
 
     describe('thirty second slide', () => {
-
         it('should look the same', async () => {
             navigateTo('/slides/32');
 
@@ -533,7 +473,5 @@ describe('slides', () => {
                 expectElementShot(result).toBeRegressionFree();
             }
         });
-
     });
-
 });
