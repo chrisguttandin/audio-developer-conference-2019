@@ -26,6 +26,8 @@ module.exports = (config) => {
 
     if (env.TRAVIS) {
         config.set({
+            browserDisconnectTimeout: 20000,
+
             browserNoActivityTimeout: 120000,
 
             browsers: ['ChromeSauceLabs'],
