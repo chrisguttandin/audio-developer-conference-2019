@@ -146,7 +146,7 @@ describe('slides', () => {
             const result = await resembleElementShot(by.tagName('body'), 'test/screenshots/slide-9');
 
             if (env.TRAVIS) {
-                expectElementShot(result).toHaveMismatchWithinRange(4.1, 4.3);
+                expectElementShot(result).toHaveMismatchWithinRange(4.2, 4.4);
             } else {
                 expectElementShot(result).toBeRegressionFree();
             }
