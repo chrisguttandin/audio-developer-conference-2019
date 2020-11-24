@@ -36,13 +36,13 @@ module.exports = (grunt) => {
             cmd: 'ng lint audio-developer-conference-2019 --configuration test'
         },
         'monitor': {
-            cmd: 'ng serve --aot'
+            cmd: 'ng serve'
         },
         'prerender': {
             cmd: 'ng run audio-developer-conference-2019:server:production && angular-prerender --preserve-index-html'
         },
         'preview': {
-            cmd: 'ng serve --aot --prod'
+            cmd: 'ng serve --prod'
         },
         'smoke': {
             cmd: env.TRAVIS
