@@ -13,7 +13,7 @@ export class HomePage {
         return element(by.css('adc-app h2')).getText();
     }
 
-    public async navigateTo(): Promise<any> {
+    public async navigateTo(): Promise<unknown> {
         return browser.get(env.IS_SMOKE_TEST === 'true' ? '/audio-developer-conference-2019' : '/');
     }
 }
