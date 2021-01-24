@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1610588426229,
+  "timestamp": 1611507695721,
   "index": "/audio-developer-conference-2019/index.html",
   "assetGroups": [
     {
@@ -11,10 +11,10 @@
         "ignoreVary": true
       },
       "urls": [
-        "/audio-developer-conference-2019/scripts/4.8fd52ee19e88735364c4.js",
+        "/audio-developer-conference-2019/scripts/4.e749c06f3d215d1eaab6.js",
         "/audio-developer-conference-2019/index.html",
-        "/audio-developer-conference-2019/scripts/main.c0de856324d2cd543f6d.js",
-        "/audio-developer-conference-2019/scripts/polyfills.4f9ef355cb19b79234a8.js",
+        "/audio-developer-conference-2019/scripts/main.88d557afc4e2cced19f3.js",
+        "/audio-developer-conference-2019/scripts/polyfills.90a39fd891e0da3007f7.js",
         "/audio-developer-conference-2019/scripts/scripts.1dade9dd63b52cc23955.js",
         "/audio-developer-conference-2019/styles/styles.4b9ce1668f31622cdcbb.css"
       ],
@@ -46,10 +46,10 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/audio-developer-conference-2019/scripts/4.8fd52ee19e88735364c4.js": "971f0a841b7db438b863e5aa42b8cf7b89694d9f",
-    "/audio-developer-conference-2019/index.html": "eec36c1f0ceaf12ee5d6fd65b9bded5eda73396b",
-    "/audio-developer-conference-2019/scripts/main.c0de856324d2cd543f6d.js": "db89000a77ba7a8555cd0e99f9fa9f1120c5c243",
-    "/audio-developer-conference-2019/scripts/polyfills.4f9ef355cb19b79234a8.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
+    "/audio-developer-conference-2019/scripts/4.e749c06f3d215d1eaab6.js": "4268d707a57ee4fe1f93be07f49fe616d021a89b",
+    "/audio-developer-conference-2019/index.html": "6dc4e15534c2ae6d37ea14de0bf6a72084dc7652",
+    "/audio-developer-conference-2019/scripts/main.88d557afc4e2cced19f3.js": "e8963b4e4a4f3159700173b151f384c99f0143f2",
+    "/audio-developer-conference-2019/scripts/polyfills.90a39fd891e0da3007f7.js": "f888b31e000d9b05c8c3fef19c325d813f2b7e1b",
     "/audio-developer-conference-2019/scripts/scripts.1dade9dd63b52cc23955.js": "e54fa2bc91ef05b31657e00f51a7e46771e2a900",
     "/audio-developer-conference-2019/styles/styles.4b9ce1668f31622cdcbb.css": "4e26bbcc4e41449fa03840699c8ead449ea863ac"
   },
