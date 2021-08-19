@@ -10,6 +10,18 @@ import { distinctUntilChanged, map, scan } from 'rxjs/operators';
 export class SlideTwoComponent implements OnInit {
     public bars$!: Observable<number[]>;
 
+    private static _appendNextBar(bars: number[]): number[] {
+        if (bars.length === 0) {
+            return [Math.round(Math.random() * 94) * 2];
+        }
+
+        if (bars.length > 19) {
+            bars.shift();
+        }
+
+        return [...bars, Math.round((bars[bars.length - 1] + Math.random() * 94) / 3) * 2];
+    }
+
     public ngOnInit(): void {
         let bars: number[] = [];
 
@@ -22,17 +34,5 @@ export class SlideTwoComponent implements OnInit {
             distinctUntilChanged(),
             scan(SlideTwoComponent._appendNextBar, bars)
         );
-    }
-
-    private static _appendNextBar(bars: number[]): number[] {
-        if (bars.length === 0) {
-            return [Math.round(Math.random() * 94) * 2];
-        }
-
-        if (bars.length > 19) {
-            bars.shift();
-        }
-
-        return [...bars, Math.round((bars[bars.length - 1] + Math.random() * 94) / 3) * 2];
     }
 }
