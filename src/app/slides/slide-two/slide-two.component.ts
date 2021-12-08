@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Observable, animationFrameScheduler, interval } from 'rxjs';
-import { distinctUntilChanged, map, scan } from 'rxjs/operators';
+import { Observable, animationFrameScheduler, distinctUntilChanged, interval, map, scan } from 'rxjs';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
