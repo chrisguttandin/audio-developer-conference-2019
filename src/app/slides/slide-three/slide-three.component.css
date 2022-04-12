@@ -11,31 +11,31 @@
 }
 
 .pad.active {
-    fill: #E4237D;
-    stroke: #E4237D;
+    fill: #e52a81;
+    stroke: #e52a81;
 }
 
-.step-1 .pad:nth-of-type(8n+1),
-.step-2 .pad:nth-of-type(8n+2),
-.step-3 .pad:nth-of-type(8n+3),
-.step-4 .pad:nth-of-type(8n+4),
-.step-5 .pad:nth-of-type(8n+5),
-.step-6 .pad:nth-of-type(8n+6),
-.step-7 .pad:nth-of-type(8n+7),
-.step-8 .pad:nth-of-type(8n+8) {
-    fill: #E73B15;
-    stroke: #E73B15;
+.step-1 .pad:nth-of-type(8n + 1),
+.step-2 .pad:nth-of-type(8n + 2),
+.step-3 .pad:nth-of-type(8n + 3),
+.step-4 .pad:nth-of-type(8n + 4),
+.step-5 .pad:nth-of-type(8n + 5),
+.step-6 .pad:nth-of-type(8n + 6),
+.step-7 .pad:nth-of-type(8n + 7),
+.step-8 .pad:nth-of-type(8n + 8) {
+    fill: #e73b15;
+    stroke: #e73b15;
     transition: fill 0.1s ease-in-out, stroke 0.1s ease-in-out;
 }
 
-.step-1 .pad:nth-of-type(8n+1).active,
-.step-2 .pad:nth-of-type(8n+2).active,
-.step-3 .pad:nth-of-type(8n+3).active,
-.step-4 .pad:nth-of-type(8n+4).active,
-.step-5 .pad:nth-of-type(8n+5).active,
-.step-6 .pad:nth-of-type(8n+6).active,
-.step-7 .pad:nth-of-type(8n+7).active,
-.step-8 .pad:nth-of-type(8n+8).active {
-    fill: #F2F2F8;
-    stroke: #F2F2F8;
+.step-1 .pad:nth-of-type(8n + 1).active,
+.step-2 .pad:nth-of-type(8n + 2).active,
+.step-3 .pad:nth-of-type(8n + 3).active,
+.step-4 .pad:nth-of-type(8n + 4).active,
+.step-5 .pad:nth-of-type(8n + 5).active,
+.step-6 .pad:nth-of-type(8n + 6).active,
+.step-7 .pad:nth-of-type(8n + 7).active,
+.step-8 .pad:nth-of-type(8n + 8).active {
+    fill: #f2f2f8;
+    stroke: #f2f2f8;
 }
