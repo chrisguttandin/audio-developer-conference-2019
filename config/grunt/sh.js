@@ -1,5 +1,3 @@
-const { env } = require('process');
-
 module.exports = (grunt) => {
     const fix = grunt.option('fix') === true;
 
@@ -39,12 +37,9 @@ module.exports = (grunt) => {
             cmd: 'npx ng serve --configuration production'
         },
         'smoke': {
-            cmd: env.CI
-                ? `npx playwright install --with-deps && \
-                    IS_SMOKE_TEST=true npx playwright test --config config/playwright/config.ts && \
-                    npx hint --telemetry=off https://chrisguttandin.github.io/audio-developer-conference-2019`
-                : `IS_SMOKE_TEST=true npx playwright test --config config/playwright/config.ts && \
-                    npx hint --telemetry=off https://chrisguttandin.github.io/audio-developer-conference-2019`
+            cmd: `npx playwright install --with-deps && \
+                IS_SMOKE_TEST=true npx playwright test --config config/playwright/config.ts && \
+                npx hint --telemetry=off https://chrisguttandin.github.io/audio-developer-conference-2019`
         },
         'test': {
             cmd: 'npx ng test --watch false'
