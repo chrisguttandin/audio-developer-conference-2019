@@ -1,5 +1,6 @@
 <h2>Export for web</h2>
 <div class="stage">
+    <!-- prettier-ignore -->
     <pre class="code">import("stdfaust.lib");
 import("layout2.dsp");
 
@@ -24,7 +25,7 @@ process = ba.bypass1(fbp,flanger_mono_gui);
    trilfo(freq) = 1.0-abs(os.saw1(freq));</pre>
     <div class="dialog">
         <span class="text">Export for web</span>
-        <button class="button">export</button>
+        <button class="button" type="button">export</button>
     </div>
 </div>
 <p class="footnote"><a href="http://faust.grame.fr/ide">faust.grame.fr/ide</a></p>
