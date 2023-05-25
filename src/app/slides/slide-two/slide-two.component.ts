@@ -4,7 +4,7 @@ import { mediaQueryMatch } from 'subscribable-things';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
-    styleUrls: ['./slide-two.component.css'],
+    styleUrls: ['./slide-two.component.scss'],
     templateUrl: './slide-two.component.html'
 })
 export class SlideTwoComponent implements OnInit {
