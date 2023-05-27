@@ -1,6 +1,5 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-    "defaultProject": "audio-developer-conference-2019",
     "newProjectRoot": "projects",
     "projects": {
         "audio-developer-conference-2019": {
