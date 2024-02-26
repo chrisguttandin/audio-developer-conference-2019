@@ -2,8 +2,8 @@ module.exports = {
     default: {
         files: [
             {
-                cwd: 'build/audio-developer-conference-2019',
-                dest: 'build/audio-developer-conference-2019',
+                cwd: 'build/audio-developer-conference-2019/browser',
+                dest: 'build/audio-developer-conference-2019/browser',
                 expand: true,
                 src: ['**/*.html']
             }
