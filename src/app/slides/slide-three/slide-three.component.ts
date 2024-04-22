@@ -1,9 +1,13 @@
+import { AsyncPipe, NgClass, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Observable, animationFrameScheduler, interval, map, from, switchMap, iif, of } from 'rxjs';
 import { mediaQueryMatch } from 'subscribable-things';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [AsyncPipe, NgClass, NgIf],
+    selector: 'adc-slide-three',
+    standalone: true,
     styleUrls: ['./slide-three.component.scss'],
     templateUrl: './slide-three.component.html'
 })

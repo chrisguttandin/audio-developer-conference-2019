@@ -1,9 +1,13 @@
+import { AsyncPipe, NgFor } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Observable, animationFrameScheduler, distinctUntilChanged, interval, map, scan, from, switchMap, iif, of } from 'rxjs';
 import { mediaQueryMatch } from 'subscribable-things';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [AsyncPipe, NgFor],
+    selector: 'adc-slide-two',
+    standalone: true,
     styleUrls: ['./slide-two.component.scss'],
     templateUrl: './slide-two.component.html'
 })
