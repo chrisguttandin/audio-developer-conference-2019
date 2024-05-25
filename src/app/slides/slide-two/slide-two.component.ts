@@ -1,6 +1,6 @@
-import { AsyncPipe, NgFor } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Observable, animationFrameScheduler, distinctUntilChanged, interval, map, scan, from, switchMap, iif, of } from 'rxjs';
+import { AsyncPipe, NgFor, isPlatformServer } from '@angular/common';
+import { ChangeDetectionStrategy, Component, OnInit, PLATFORM_ID, inject } from '@angular/core';
+import { Observable, animationFrameScheduler, distinctUntilChanged, interval, map, scan, switchMap, iif, of } from 'rxjs';
 import { mediaQueryMatch } from 'subscribable-things';
 
 @Component({
@@ -14,16 +14,10 @@ import { mediaQueryMatch } from 'subscribable-things';
 export class SlideTwoComponent implements OnInit {
     public bars$!: Observable<number[]>;
 
-    private static _appendNextBar(bars: number[], bar: null | number = null): number[] {
-        if (bars.length > 19) {
-            bars.shift();
-        }
-
-        return [...bars, bar === null ? Math.round((bars[bars.length - 1] + Math.random() * 94) / 3) * 2 : bar];
-    }
+    #platformId = inject(PLATFORM_ID);
 
     public ngOnInit(): void {
-        this.bars$ = from(mediaQueryMatch('(prefers-reduced-motion: reduce)')).pipe(
+        this.bars$ = iif(() => isPlatformServer(this.#platformId), of(true), mediaQueryMatch('(prefers-reduced-motion: reduce)')).pipe(
             switchMap((matches) =>
                 iif(
                     () => matches,
@@ -36,7 +30,7 @@ export class SlideTwoComponent implements OnInit {
                 )
             ),
             scan(
-                SlideTwoComponent._appendNextBar,
+                (bars, bar) => [...bars.slice(1), bar === null ? Math.round((bars[bars.length - 1] + Math.random() * 94) / 3) * 2 : bar],
                 Array.from({ length: 20 }, (_, index) => 36 * ((index % 4) + 1))
             )
         );

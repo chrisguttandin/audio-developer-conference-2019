@@ -1,6 +1,6 @@
-import { AsyncPipe, NgClass, NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Observable, animationFrameScheduler, interval, map, from, switchMap, iif, of } from 'rxjs';
+import { AsyncPipe, NgClass, NgIf, isPlatformServer } from '@angular/common';
+import { ChangeDetectionStrategy, Component, OnInit, PLATFORM_ID, inject } from '@angular/core';
+import { Observable, animationFrameScheduler, interval, map, switchMap, iif, of } from 'rxjs';
 import { mediaQueryMatch } from 'subscribable-things';
 
 @Component({
@@ -14,8 +14,10 @@ import { mediaQueryMatch } from 'subscribable-things';
 export class SlideThreeComponent implements OnInit {
     public stepClass$!: Observable<string>;
 
+    #platformId = inject(PLATFORM_ID);
+
     public ngOnInit(): void {
-        this.stepClass$ = from(mediaQueryMatch('(prefers-reduced-motion: reduce)')).pipe(
+        this.stepClass$ = iif(() => isPlatformServer(this.#platformId), of(true), mediaQueryMatch('(prefers-reduced-motion: reduce)')).pipe(
             switchMap((matches) =>
                 iif(
                     () => matches,
