@@ -7,7 +7,6 @@ import { mediaQueryMatch } from 'subscribable-things';
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [AsyncPipe, NgClass, NgIf],
     selector: 'adc-slide-three',
-    standalone: true,
     styleUrls: ['./slide-three.component.scss'],
     templateUrl: './slide-three.component.html'
 })
