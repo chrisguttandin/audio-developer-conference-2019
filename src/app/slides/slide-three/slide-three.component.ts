@@ -1,11 +1,11 @@
-import { AsyncPipe, NgClass, NgIf, isPlatformServer } from '@angular/common';
+import { AsyncPipe, NgClass, isPlatformServer } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit, PLATFORM_ID, inject } from '@angular/core';
 import { Observable, animationFrameScheduler, interval, map, switchMap, iif, of } from 'rxjs';
 import { mediaQueryMatch } from 'subscribable-things';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [AsyncPipe, NgClass, NgIf],
+    imports: [AsyncPipe, NgClass],
     selector: 'adc-slide-three',
     styleUrls: ['./slide-three.component.scss'],
     templateUrl: './slide-three.component.html'

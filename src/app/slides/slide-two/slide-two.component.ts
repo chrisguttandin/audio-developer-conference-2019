@@ -1,11 +1,11 @@
-import { AsyncPipe, NgFor, isPlatformServer } from '@angular/common';
+import { AsyncPipe, isPlatformServer } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit, PLATFORM_ID, inject } from '@angular/core';
 import { Observable, animationFrameScheduler, distinctUntilChanged, interval, map, scan, switchMap, iif, of } from 'rxjs';
 import { mediaQueryMatch } from 'subscribable-things';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [AsyncPipe, NgFor],
+    imports: [AsyncPipe],
     selector: 'adc-slide-two',
     styleUrls: ['./slide-two.component.scss'],
     templateUrl: './slide-two.component.html'
